@@ -19,7 +19,13 @@
 		D5D08C14191BB9240026E317 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D08BFC191BB9240026E317 /* UIKit.framework */; };
 		D5D08C1C191BB9240026E317 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5D08C1A191BB9240026E317 /* InfoPlist.strings */; };
 		D5D08C1E191BB9240026E317 /* AudioListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C1D191BB9240026E317 /* AudioListTests.m */; };
-		D5D08C29191BC5170026E317 /* ALAiPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C28191BC5170026E317 /* ALAiPadViewController.m */; };
+		D5D08C29191BC5170026E317 /* ALAiPadSplitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C28191BC5170026E317 /* ALAiPadSplitController.m */; };
+		D5D08C2D191BF33A0026E317 /* ALAiPadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C2C191BF33A0026E317 /* ALAiPadTableViewController.m */; };
+		D5D08C31191BF3610026E317 /* ALAiPhoneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C30191BF3610026E317 /* ALAiPhoneTableViewController.m */; };
+		D5D08C34191BF3940026E317 /* ALAiPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C33191BF3940026E317 /* ALAiPhoneViewController.m */; };
+		D5D08C37191BFB590026E317 /* ALAiPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C36191BFB590026E317 /* ALAiPadViewController.m */; };
+		D5D08C3A191BFCD50026E317 /* ALAUniversalData.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C39191BFCD50026E317 /* ALAUniversalData.m */; };
+		D5D08C3D191C0FE60026E317 /* ALATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C3C191C0FE60026E317 /* ALATableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +55,20 @@
 		D5D08C19191BB9240026E317 /* AudioListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioListTests-Info.plist"; sourceTree = "<group>"; };
 		D5D08C1B191BB9240026E317 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D5D08C1D191BB9240026E317 /* AudioListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioListTests.m; sourceTree = "<group>"; };
-		D5D08C27191BC5170026E317 /* ALAiPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPadViewController.h; sourceTree = "<group>"; };
-		D5D08C28191BC5170026E317 /* ALAiPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPadViewController.m; sourceTree = "<group>"; };
+		D5D08C27191BC5170026E317 /* ALAiPadSplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALAiPadSplitController.h; path = AudioList/ALAiPadSplitController.h; sourceTree = "<group>"; };
+		D5D08C28191BC5170026E317 /* ALAiPadSplitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALAiPadSplitController.m; path = AudioList/ALAiPadSplitController.m; sourceTree = "<group>"; };
+		D5D08C2B191BF33A0026E317 /* ALAiPadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPadTableViewController.h; sourceTree = "<group>"; };
+		D5D08C2C191BF33A0026E317 /* ALAiPadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPadTableViewController.m; sourceTree = "<group>"; };
+		D5D08C2F191BF3610026E317 /* ALAiPhoneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPhoneTableViewController.h; sourceTree = "<group>"; };
+		D5D08C30191BF3610026E317 /* ALAiPhoneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPhoneTableViewController.m; sourceTree = "<group>"; };
+		D5D08C32191BF3940026E317 /* ALAiPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPhoneViewController.h; sourceTree = "<group>"; };
+		D5D08C33191BF3940026E317 /* ALAiPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPhoneViewController.m; sourceTree = "<group>"; };
+		D5D08C35191BFB590026E317 /* ALAiPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPadViewController.h; sourceTree = "<group>"; };
+		D5D08C36191BFB590026E317 /* ALAiPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPadViewController.m; sourceTree = "<group>"; };
+		D5D08C38191BFCD50026E317 /* ALAUniversalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALAUniversalData.h; path = ../ALAUniversalData.h; sourceTree = "<group>"; };
+		D5D08C39191BFCD50026E317 /* ALAUniversalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALAUniversalData.m; path = ../ALAUniversalData.m; sourceTree = "<group>"; };
+		D5D08C3B191C0FE60026E317 /* ALATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALATableViewCell.h; path = ../ALATableViewCell.h; sourceTree = "<group>"; };
+		D5D08C3C191C0FE60026E317 /* ALATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALATableViewCell.m; path = ../ALATableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +98,7 @@
 		D5D08BEC191BB9240026E317 = {
 			isa = PBXGroup;
 			children = (
+				D5D08C2E191BF3470026E317 /* iPhone */,
 				D5D08C2A191BC5490026E317 /* iPad */,
 				D5D08BFE191BB9240026E317 /* AudioList */,
 				D5D08C17191BB9240026E317 /* AudioListTests */,
@@ -111,10 +130,12 @@
 		D5D08BFE191BB9240026E317 /* AudioList */ = {
 			isa = PBXGroup;
 			children = (
+				D5D08C3B191C0FE60026E317 /* ALATableViewCell.h */,
+				D5D08C3C191C0FE60026E317 /* ALATableViewCell.m */,
+				D5D08C38191BFCD50026E317 /* ALAUniversalData.h */,
+				D5D08C39191BFCD50026E317 /* ALAUniversalData.m */,
 				D5D08C07191BB9240026E317 /* ALAAppDelegate.h */,
 				D5D08C08191BB9240026E317 /* ALAAppDelegate.m */,
-				D5D08C27191BC5170026E317 /* ALAiPadViewController.h */,
-				D5D08C28191BC5170026E317 /* ALAiPadViewController.m */,
 				D5D08C0A191BB9240026E317 /* Images.xcassets */,
 				D5D08BFF191BB9240026E317 /* Supporting Files */,
 			);
@@ -153,8 +174,25 @@
 		D5D08C2A191BC5490026E317 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				D5D08C35191BFB590026E317 /* ALAiPadViewController.h */,
+				D5D08C36191BFB590026E317 /* ALAiPadViewController.m */,
+				D5D08C2B191BF33A0026E317 /* ALAiPadTableViewController.h */,
+				D5D08C2C191BF33A0026E317 /* ALAiPadTableViewController.m */,
+				D5D08C27191BC5170026E317 /* ALAiPadSplitController.h */,
+				D5D08C28191BC5170026E317 /* ALAiPadSplitController.m */,
 			);
 			name = iPad;
+			sourceTree = "<group>";
+		};
+		D5D08C2E191BF3470026E317 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				D5D08C32191BF3940026E317 /* ALAiPhoneViewController.h */,
+				D5D08C33191BF3940026E317 /* ALAiPhoneViewController.m */,
+				D5D08C2F191BF3610026E317 /* ALAiPhoneTableViewController.h */,
+				D5D08C30191BF3610026E317 /* ALAiPhoneTableViewController.m */,
+			);
+			name = iPhone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,9 +291,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D08C37191BFB590026E317 /* ALAiPadViewController.m in Sources */,
+				D5D08C34191BF3940026E317 /* ALAiPhoneViewController.m in Sources */,
+				D5D08C3D191C0FE60026E317 /* ALATableViewCell.m in Sources */,
 				D5D08C05191BB9240026E317 /* main.m in Sources */,
+				D5D08C31191BF3610026E317 /* ALAiPhoneTableViewController.m in Sources */,
 				D5D08C09191BB9240026E317 /* ALAAppDelegate.m in Sources */,
-				D5D08C29191BC5170026E317 /* ALAiPadViewController.m in Sources */,
+				D5D08C2D191BF33A0026E317 /* ALAiPadTableViewController.m in Sources */,
+				D5D08C3A191BFCD50026E317 /* ALAUniversalData.m in Sources */,
+				D5D08C29191BC5170026E317 /* ALAiPadSplitController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +498,7 @@
 				D5D08C23191BB9240026E317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5D08C24191BB9240026E317 /* Build configuration list for PBXNativeTarget "AudioListTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +507,7 @@
 				D5D08C26191BB9240026E317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

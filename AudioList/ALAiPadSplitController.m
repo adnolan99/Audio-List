@@ -6,13 +6,20 @@
 //  Copyright (c) 2014 Austin Nolan. All rights reserved.
 //
 
+#import "ALAiPadSplitController.h"
+
 #import "ALAiPadViewController.h"
 
-@interface ALAiPadViewController () <UISplitViewControllerDelegate>
+#import "ALAiPadTableViewController.h"
+
+
+
+
+@interface ALAiPadSplitController () <UISplitViewControllerDelegate>
 
 @end
 
-@implementation ALAiPadViewController
+@implementation ALAiPadSplitController
 {
     
     
@@ -30,11 +37,11 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         
-        detailVC = [[UIViewController alloc]initWithNibName:nil bundle:nil];
+        detailVC = [[ALAiPadViewController alloc]initWithNibName:nil bundle:nil];
         
         nc = [[UINavigationController alloc]initWithRootViewController:detailVC];
 
-        listVC = [[UITableViewController alloc]initWithStyle:UITableViewStylePlain];
+        listVC = [[ALAiPadTableViewController alloc]initWithStyle:UITableViewStylePlain];
         
         self.viewControllers = @[listVC,nc];
         
@@ -88,7 +95,7 @@
  make the list have a name, image, audio file, number of times played, like or dislike(can be one or two property),
 
 
-
+*/
 
 
 
