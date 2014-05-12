@@ -11,7 +11,7 @@
 @interface ALAiPadViewController : UIViewController
 
 
-
+@property (nonatomic) NSInteger songIndex;
 
 
 @end

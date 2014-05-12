@@ -23,11 +23,15 @@
 {
     
     
-    UITableViewController * listVC;
+    ALAiPadTableViewController * listVC;
     
-    UIViewController * detailVC;
+    ALAiPadViewController * detailVC;
     
     UINavigationController * nc;
+    
+    UILabel * detailName;
+    
+    UIImageView * detailImage;
     
     
     
@@ -42,6 +46,9 @@
         nc = [[UINavigationController alloc]initWithRootViewController:detailVC];
 
         listVC = [[ALAiPadTableViewController alloc]initWithStyle:UITableViewStylePlain];
+        
+        
+        listVC.detailVC = detailVC;
         
         self.viewControllers = @[listVC,nc];
         
@@ -59,6 +66,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    detailVC.view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    
+    detailVC.view.backgroundColor = [UIColor yellowColor];
+    
+    
+    detailName = [[UILabel alloc]initWithFrame:CGRectMake(100, 175, 100, 20)];
+    detailName.backgroundColor = [UIColor blueColor];
+    [detailVC.view addSubview:detailName];
+    
+    
+    detailImage =[[UIImageView alloc] initWithFrame:CGRectMake(100,200, 100, 100)];
+    detailImage.backgroundColor = [UIColor redColor];
+    [detailVC.view addSubview:detailImage];
+    
+    
+    
+    
+    
+    
     // Do any additional setup after loading the view.
 }
 

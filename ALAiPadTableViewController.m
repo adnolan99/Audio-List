@@ -8,9 +8,13 @@
 
 #import "ALAiPadTableViewController.h"
 
+//#import "ALAiPadViewController.h"
+
 #import "ALATableViewCell.h"
 
 #import "ALAUniversalData.h"
+
+#import "ALASoundCloudRequest.h"
 
 @interface ALAiPadTableViewController ()
 
@@ -30,6 +34,10 @@
         
         
         
+        
+        
+        NSLog(@"Sound Cloud Profile Austin %@", [ALASoundCloudRequest getSongsWithSoundCloud]);
+
         
         
         [ALAUniversalData sharedData].soundFiles = [@[

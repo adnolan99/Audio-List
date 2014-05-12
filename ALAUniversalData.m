@@ -8,10 +8,14 @@
 
 #import "ALAUniversalData.h"
 
+
+#import "ALASoundCloudRequest.h"
+
 @interface ALAUniversalData ()
 
-
 @end
+
+
 
 @implementation ALAUniversalData
 {
@@ -37,41 +41,53 @@
 }
 
 
-    
-    
     -(id)init
     {
         
         self = [super init];
         if(self)
         {
-//            soundFiles = [@[
-//                            
-//                            @{@"nameKey1":@"userName1",@"pictureKey1":@"picture1",@"audioKey1":@"audioFile1"},
-//                            @{@"nameKey2":@"userName2",@"pictureKey2":@"picture2",@"audioKey2":@"audioFile2"},
-//                            @{@"nameKey3":@"userName3",@"pictureKey3":@"picture3",@"audioKey3":@"audioFile3"},
-//                            @{@"nameKey4":@"userName4",@"pictureKey4":@"picture4",@"audioKey4":@"audioFile4"},
-//                            @{@"nameKey5":@"userName5",@"pictureKey5":@"picture5",@"audioKey5":@"audioFile5"},
-//                            ]mutableCopy];
-        
-            //[self soundFiles];
+
+            
+            
+            
         }
         return self;
+    
+    
     }
     
     
     
--(NSArray *) soundFilesCopy
+//-(NSArray *) soundFilesCopy
+//{
+//    
+//    NSLog(@"Beforghjhtfe");
+//
+//    
+//    return [self.soundFiles copy];
+//
+//
+//}
+
+
+
+
+
+//-(NSMutableDictionary *)allAlbumlists
+//{
+//    
+//    
+//}
+
+
+
+
+-(NSMutableDictionary *)allAlbumInfo
 {
     
-    NSLog(@"Beforghjhtfe");
-
-    
-    return [self.soundFiles copy];
-
-
+    return _albumInfo;
 }
-
 
 
 

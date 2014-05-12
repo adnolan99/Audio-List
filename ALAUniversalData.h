@@ -27,9 +27,21 @@
 
 //UITableViewCell
 
-
-
 @property (nonatomic) NSMutableArray * soundFiles;
+
+@property (nonatomic) NSMutableArray * albumsMutableArray;
+@property (nonatomic) NSMutableArray * songsMutableArray;
+
+
+
+@property (nonatomic) NSMutableArray * albumList;
+@property (nonatomic) NSMutableDictionary * albumInfo;
+
+
+-(NSMutableArray *)allAlbumLists;
+-(NSMutableDictionary *)allAlbumInfo;
+
+
 
 @end
 

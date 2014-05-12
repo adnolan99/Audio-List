@@ -10,6 +10,9 @@
 
 #import "ALAiPadSplitController.h"
 
+#import "ALASoundCloudRequest.h"
+
+
 
 @implementation ALAAppDelegate
 
@@ -24,6 +27,10 @@
         ALAiPadSplitController * splitVC = [[ALAiPadSplitController alloc] initWithNibName:nil bundle:nil];
         
         self.window.rootViewController = splitVC;
+        
+        
+        [ALASoundCloudRequest getSongsWithSoundCloud];
+        
         
     }
     

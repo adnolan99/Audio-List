@@ -8,7 +8,7 @@
 
 #import "ALAiPadViewController.h"
 
-#import "ALAiPadTableViewController.h"
+//#import "ALAiPadTableViewController.h"
 
 @interface ALAiPadViewController () //<ALAiPadTableViewControllerDelegate>
 
@@ -20,6 +20,7 @@
 
 @implementation ALAiPadViewController
 {
+    
 UIView * detailView;
 
 UILabel * detailName;
@@ -42,25 +43,25 @@ UIImageView * detailImage;
 {
     [super viewDidLoad];
     
-    detailView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    
-    detailView.backgroundColor = [UIColor yellowColor];
+//    detailView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+//    
+//    detailView.backgroundColor = [UIColor yellowColor];
     
     
  
     
-    detailName = [[UILabel alloc]initWithFrame:CGRectMake(100, 175, 100, 20)];
-    detailName.backgroundColor = [UIColor blueColor];
-    [detailView addSubview:detailName];
+//    detailName = [[UILabel alloc]initWithFrame:CGRectMake(100, 175, 100, 20)];
+//    detailName.backgroundColor = [UIColor blueColor];
+//    [detailView addSubview:detailName];
+//    
+//    
+//    detailImage =[[UIImageView alloc] initWithFrame:CGRectMake(100,200, 100, 100)];
+//    detailImage.backgroundColor = [UIColor redColor];
+//    [detailView addSubview:detailImage];
     
     
-    detailImage =[[UIImageView alloc] initWithFrame:CGRectMake(100,200, 100, 100)];
-    detailImage.backgroundColor = [UIColor redColor];
-    [detailView addSubview:detailImage];
     
-    
-    
-    [self.view addSubview:detailView];
+//    [self.view addSubview:detailView];
     
     
     // Do any additional setup after loading the view.
@@ -70,11 +71,7 @@ UIImageView * detailImage;
 {
     
     
-    
-    
 }
-
-
 
 
 - (void)didReceiveMemoryWarning
