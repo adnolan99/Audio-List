@@ -29,7 +29,7 @@
         self.window.rootViewController = splitVC;
         
         
-        [ALASoundCloudRequest getSongsWithSoundCloud];
+        //[ALASoundCloudRequest getSongsWithSoundCloud];
         
         
     }

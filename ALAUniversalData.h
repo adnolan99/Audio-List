@@ -8,9 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+#import "ALASong.h"
+
 @interface ALAUniversalData : NSObject
 
 +(ALAUniversalData *)sharedData;
+
+
+-(void)addNewTrack:(ALASong *)track;
+-(NSArray *)allTracks;
+-(void)addNewPlaylist:(ALAPlaylist *)playlist;
+-(NSArray *)allPlaylists;
+-(void)addNewUser:(ALAUser *) user;
+-(NSArray *)allUsers;
+
+
+
 
 
 //SplitViewVC
@@ -38,7 +51,7 @@
 @property (nonatomic) NSMutableDictionary * albumInfo;
 
 
--(NSMutableArray *)allAlbumLists;
+//-(NSMutableArray *)allAlbumLists;
 -(NSMutableDictionary *)allAlbumInfo;
 
 

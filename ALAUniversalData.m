@@ -20,8 +20,12 @@
 @implementation ALAUniversalData
 {
     
-
+    NSMutableArray * tracks;
     
+    NSMutableArray * playlist2;
+
+    NSMutableArray * users;
+
 }
 
 
@@ -41,44 +45,69 @@
 }
 
 
-    -(id)init
+
+-(id)init
+{
+    
+    self = [super init];
+    if(self)
     {
+        tracks = [@[] mutableCopy];
         
-        self = [super init];
-        if(self)
-        {
+        playlist2 = [@[] mutableCopy];
+        
+        users = [@[] mutableCopy];
 
-            
-            
-            
-        }
-        return self;
-    
-    
     }
+    return self;
+}
+
+
+-(void)addNewTrack:(ALASong *)track
+    {
+        [tracks addObject:track];
+    }
+
+
+
+-(void)addNewPlaylist:(ALAPlaylist *)playlist
+{
+    [playlist2 addObject:playlist];
+}
+
+
+-(void)addNewUser:(ALAUser *)user
+{
+    [users addObject:user];
+}
+
+
+
+
+-(NSArray *)allTracks
+{
+                      
+    return [tracks copy];
+}
+
+-(NSArray *)allPlaylists
+{
     
+    return [playlist2 copy];
+}
+
+
+-(NSArray *)allUsers
+{
     
-    
-//-(NSArray *) soundFilesCopy
-//{
-//    
-//    NSLog(@"Beforghjhtfe");
-//
-//    
-//    return [self.soundFiles copy];
-//
-//
-//}
+    return [users copy];
+}
 
 
 
 
 
-//-(NSMutableDictionary *)allAlbumlists
-//{
-//    
-//    
-//}
+
 
 
 

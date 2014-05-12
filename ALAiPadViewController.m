@@ -8,6 +8,8 @@
 
 #import "ALAiPadViewController.h"
 
+
+
 //#import "ALAiPadTableViewController.h"
 
 @interface ALAiPadViewController () //<ALAiPadTableViewControllerDelegate>
@@ -67,11 +69,7 @@ UIImageView * detailImage;
     // Do any additional setup after loading the view.
 }
 
--(void)changeDetailDisplay
-{
-    
-    
-}
+
 
 
 - (void)didReceiveMemoryWarning

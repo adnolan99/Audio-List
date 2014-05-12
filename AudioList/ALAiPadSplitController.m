@@ -12,10 +12,11 @@
 
 #import "ALAiPadTableViewController.h"
 
+#import "ALASoundCloudRequest.h"
 
 
 
-@interface ALAiPadSplitController () <UISplitViewControllerDelegate>
+@interface ALAiPadSplitController () <UISplitViewControllerDelegate, UITabBarControllerDelegate>
 
 @end
 
@@ -24,6 +25,7 @@
     
     
     ALAiPadTableViewController * listVC;
+    
     
     ALAiPadViewController * detailVC;
     
@@ -45,18 +47,31 @@
         
         nc = [[UINavigationController alloc]initWithRootViewController:detailVC];
 
+        
+        //listVC needs tab bar at bottom for tracks and playlists
+        
         listVC = [[ALAiPadTableViewController alloc]initWithStyle:UITableViewStylePlain];
-        
-        
         listVC.detailVC = detailVC;
         
         self.viewControllers = @[listVC,nc];
         
        // self.presentsWithGesture = YES;
 
-        
         self.delegate = self;
         
+        [ALASoundCloudRequest updateData];
+        
+        listVC.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemTopRated tag:0];
+        
+        UITableViewController * playlistVC = [[UITableViewController alloc] initWithNibName:nil bundle:nil];
+        playlistVC.title = @"Playlists";
+        playlistVC.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemHistory tag:1];
+        listVC.title = @"Songs";
+
+        UITabBarController * tabBar = [[UITabBarController alloc]init];
+        [tabBar setViewControllers:@[listVC,playlistVC]];
+        tabBar.delegate = self;
+        self.viewControllers = @[tabBar,nc];
         
         // Custom initialization
     }
@@ -66,7 +81,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     
     detailVC.view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     
@@ -93,7 +107,7 @@
 -(void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc
 {
     
-    NSLog(@"%@",nc);
+    NSLog(@"iPadSpliVC %@",nc);
     
     barButtonItem.title = @"Show List";
     detailVC.navigationItem.leftBarButtonItem = barButtonItem;
@@ -110,8 +124,6 @@
 
 -(void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
 {
-    
-    
     
     nc.navigationBarHidden = YES;
 }

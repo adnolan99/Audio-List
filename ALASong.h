@@ -8,16 +8,36 @@
 
 #import <Foundation/Foundation.h>
 
+#import "ALADictionary.h"
 
-@class ALAArtist;
+//@class ALAArtist;
+//@class ALAAlbum;
 
-@class ALAAlbum;
 
-@interface ALASong : NSDictionary
+@class ALAUser;
+@class ALAPlaylist;
 
-@property (nonatomic) ALAArtist * artist;
 
-@property (nonatomic) ALAAlbum * album;
+@interface ALASong : ALADictionary
+
+//@property (nonatomic) ALAArtist * artist;
+//
+//@property (nonatomic) ALAAlbum * album;
+
+
+
+@property (nonatomic) ALAUser * user;
+
+@property (nonatomic) ALAPlaylist * playlist;
+
++(id)newTrack;
+
+//
+//-(id)objectForkey:(id)Key;
+//
+//-(void)setObject:(id)anObject forKey:(id < NSCopying>)aKey;
+//
+//-(void)removeObjectForKey:(id)aKey;
 
 
 @end

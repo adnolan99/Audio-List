@@ -13,6 +13,6 @@
 
 @property (nonatomic) NSInteger index;
 
--(NSMutableArray *)soundFiles;
+//-(NSMutableArray *)soundFiles;
 
 @end

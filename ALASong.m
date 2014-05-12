@@ -10,18 +10,13 @@
 
 
 @implementation ALASong
+
+
++(id)newTrack
 {
-
-ALASong * song;
-
+    return [[ALASong alloc]init];
+    
 }
-
-
-
-//
-//songkey : @"titlekey": @"title",@"genrekey":@"classic",@"audioKey":@"audioFile"]
-//
-
 
 
 

@@ -16,6 +16,8 @@
 
 #import "ALASoundCloudRequest.h"
 
+#import "ALAiPadSplitController.h"
+
 @interface ALAiPadTableViewController ()
 
 @end
@@ -32,36 +34,36 @@
     self = [super initWithStyle:style];
     if (self) {
         
+        NSNotificationCenter * nCenter = [NSNotificationCenter defaultCenter];
+        
+        //NSOperationQueue * queue = [[NSOperationQueue alloc] init];
         
         
+        [nCenter addObserverForName:@"dataUpdated" object:nil queue:nil usingBlock:^(NSNotification *note) {
         
-        
-        NSLog(@"Sound Cloud Profile Austin %@", [ALASoundCloudRequest getSongsWithSoundCloud]);
+            dispatch_async(dispatch_get_main_queue(), ^{
 
+                [self.tableView reloadData];
+            });
+        }];
         
         
-        [ALAUniversalData sharedData].soundFiles = [@[
-                                                      
-                                                      @{@"nameKey":@"userName1",@"pictureKey":@"picture1",@"audioKey":@"audioFile1"},
-                                                      @{@"nameKey":@"userName2",@"pictureKey":@"picture2",@"audioKey":@"audioFile2"},
-                                                      @{@"nameKey":@"userName3",@"pictureKey":@"picture3",@"audioKey":@"audioFile3"},
-                                                      @{@"nameKey":@"userName4",@"pictureKey":@"picture4",@"audioKey":@"audioFile4"},
-                                                      @{@"nameKey":@"userName5",@"pictureKey":@"picture5",@"audioKey":@"audioFile5"},
-                                                      ]mutableCopy];
-
+//        NSLog(@"Sound Cloud Profile Austin %@", [ALASoundCloudRequest getSongsWithSoundCloud]);
+//
+//        [ALAUniversalData sharedData].soundFiles = [@[]mutableCopy];
+//        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//        self.tableView.contentInset = UIEdgeInsetsMake(50, 0, 0, 0);
         
-        //self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        //self.tableView.contentInset = UIEdgeInsetsMake(50, 0, 0, 0);
+        
         self.tableView.rowHeight = 50;
         
-        // Custom initialization
+        
+                
+        
+        
     }
     return self;
 }
-
-
-
-
 
 
 - (void)viewDidLoad
@@ -93,21 +95,36 @@
 {
     // Return the number of rows in the section.
     
-    NSLog(@"Before");
+    NSLog(@"iPadTVC");
 
-    return [[[ALAUniversalData sharedData] soundFiles] count];
+    return [[[ALAUniversalData sharedData] allTracks] count];
+    //below is what I had before I changed to Jo's line above
+    //return [[[ALAUniversalData sharedData] soundFiles] count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ALATableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+
+    //ALATableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    
     
     if (cell == nil)
     {
-        cell = [[ALATableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    
-        cell.textLabel.text = [ALAUniversalData sharedData].soundFiles[indexPath.row][@"nameKey"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        
+        ALASong * track = [[ALAUniversalData sharedData] allTracks][indexPath.row];
+        
+        cell.textLabel.text = track[@"title"];
+        
+        
+        
+        //below is my text
+        //cell = [[ALATableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        //cell.textLabel.text = [ALAUniversalData sharedData].soundFiles[indexPath.row][@"nameKey"];
     }
 
     return cell;

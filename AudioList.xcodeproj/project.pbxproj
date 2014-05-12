@@ -30,6 +30,9 @@
 		D5D08C44191D14070026E317 /* ALAArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C43191D14070026E317 /* ALAArtist.m */; };
 		D5D08C47191D143B0026E317 /* ALAAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C46191D143B0026E317 /* ALAAlbum.m */; };
 		D5D08C4A191D1D430026E317 /* ALASoundCloudRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C49191D1D430026E317 /* ALASoundCloudRequest.m */; };
+		D5D08C4E192139270026E317 /* ALADictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C4D192139270026E317 /* ALADictionary.m */; };
+		D5D08C5119213A1F0026E317 /* ALAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C5019213A1F0026E317 /* ALAUser.m */; };
+		D5D08C5419213A670026E317 /* ALAPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D08C5319213A670026E317 /* ALAPlaylist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +72,8 @@
 		D5D08C33191BF3940026E317 /* ALAiPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPhoneViewController.m; sourceTree = "<group>"; };
 		D5D08C35191BFB590026E317 /* ALAiPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPadViewController.h; sourceTree = "<group>"; };
 		D5D08C36191BFB590026E317 /* ALAiPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPadViewController.m; sourceTree = "<group>"; };
-		D5D08C38191BFCD50026E317 /* ALAUniversalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALAUniversalData.h; path = ../ALAUniversalData.h; sourceTree = "<group>"; };
-		D5D08C39191BFCD50026E317 /* ALAUniversalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALAUniversalData.m; path = ../ALAUniversalData.m; sourceTree = "<group>"; };
+		D5D08C38191BFCD50026E317 /* ALAUniversalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAUniversalData.h; sourceTree = "<group>"; };
+		D5D08C39191BFCD50026E317 /* ALAUniversalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAUniversalData.m; sourceTree = "<group>"; };
 		D5D08C3B191C0FE60026E317 /* ALATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALATableViewCell.h; path = ../ALATableViewCell.h; sourceTree = "<group>"; };
 		D5D08C3C191C0FE60026E317 /* ALATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALATableViewCell.m; path = ../ALATableViewCell.m; sourceTree = "<group>"; };
 		D5D08C3E191D13CA0026E317 /* ALASong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALASong.h; sourceTree = "<group>"; };
@@ -81,6 +84,12 @@
 		D5D08C46191D143B0026E317 /* ALAAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAAlbum.m; sourceTree = "<group>"; };
 		D5D08C48191D1D430026E317 /* ALASoundCloudRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALASoundCloudRequest.h; sourceTree = "<group>"; };
 		D5D08C49191D1D430026E317 /* ALASoundCloudRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALASoundCloudRequest.m; sourceTree = "<group>"; };
+		D5D08C4C192139270026E317 /* ALADictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALADictionary.h; sourceTree = "<group>"; };
+		D5D08C4D192139270026E317 /* ALADictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALADictionary.m; sourceTree = "<group>"; };
+		D5D08C4F19213A1F0026E317 /* ALAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAUser.h; sourceTree = "<group>"; };
+		D5D08C5019213A1F0026E317 /* ALAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAUser.m; sourceTree = "<group>"; };
+		D5D08C5219213A670026E317 /* ALAPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAPlaylist.h; sourceTree = "<group>"; };
+		D5D08C5319213A670026E317 /* ALAPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAPlaylist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +156,6 @@
 			children = (
 				D5D08C3B191C0FE60026E317 /* ALATableViewCell.h */,
 				D5D08C3C191C0FE60026E317 /* ALATableViewCell.m */,
-				D5D08C38191BFCD50026E317 /* ALAUniversalData.h */,
-				D5D08C39191BFCD50026E317 /* ALAUniversalData.m */,
 				D5D08C07191BB9240026E317 /* ALAAppDelegate.h */,
 				D5D08C08191BB9240026E317 /* ALAAppDelegate.m */,
 				D5D08C0A191BB9240026E317 /* Images.xcassets */,
@@ -213,14 +220,38 @@
 		D5D08C41191D13D70026E317 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D5D08C38191BFCD50026E317 /* ALAUniversalData.h */,
+				D5D08C39191BFCD50026E317 /* ALAUniversalData.m */,
+				D5D08C4B192100C00026E317 /* Data Models */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D5D08C4B192100C00026E317 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5D08C5519213B500026E317 /* My Models */,
+				D5D08C3E191D13CA0026E317 /* ALASong.h */,
+				D5D08C3F191D13CA0026E317 /* ALASong.m */,
+				D5D08C4C192139270026E317 /* ALADictionary.h */,
+				D5D08C4D192139270026E317 /* ALADictionary.m */,
+				D5D08C4F19213A1F0026E317 /* ALAUser.h */,
+				D5D08C5019213A1F0026E317 /* ALAUser.m */,
+				D5D08C5219213A670026E317 /* ALAPlaylist.h */,
+				D5D08C5319213A670026E317 /* ALAPlaylist.m */,
+			);
+			name = "Data Models";
+			sourceTree = "<group>";
+		};
+		D5D08C5519213B500026E317 /* My Models */ = {
+			isa = PBXGroup;
+			children = (
 				D5D08C42191D14070026E317 /* ALAArtist.h */,
 				D5D08C43191D14070026E317 /* ALAArtist.m */,
 				D5D08C45191D143B0026E317 /* ALAAlbum.h */,
 				D5D08C46191D143B0026E317 /* ALAAlbum.m */,
-				D5D08C3E191D13CA0026E317 /* ALASong.h */,
-				D5D08C3F191D13CA0026E317 /* ALASong.m */,
 			);
-			name = Models;
+			name = "My Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,10 +358,13 @@
 				D5D08C31191BF3610026E317 /* ALAiPhoneTableViewController.m in Sources */,
 				D5D08C40191D13CA0026E317 /* ALASong.m in Sources */,
 				D5D08C09191BB9240026E317 /* ALAAppDelegate.m in Sources */,
+				D5D08C5419213A670026E317 /* ALAPlaylist.m in Sources */,
 				D5D08C2D191BF33A0026E317 /* ALAiPadTableViewController.m in Sources */,
 				D5D08C44191D14070026E317 /* ALAArtist.m in Sources */,
+				D5D08C4E192139270026E317 /* ALADictionary.m in Sources */,
 				D5D08C3A191BFCD50026E317 /* ALAUniversalData.m in Sources */,
 				D5D08C4A191D1D430026E317 /* ALASoundCloudRequest.m in Sources */,
+				D5D08C5119213A1F0026E317 /* ALAUser.m in Sources */,
 				D5D08C29191BC5170026E317 /* ALAiPadSplitController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

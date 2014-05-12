@@ -21,10 +21,6 @@
 }
 
 
-
-
-
-
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -41,9 +37,7 @@
         [self.contentView addSubview:songImage];
 
         
-        
-        
-        
+
         // Initialization code
     }
     return self;
@@ -51,19 +45,19 @@
 
 
 
--(void)setIndex:(NSInteger)index
-{
-    _index = index;
-    NSDictionary * profileInfo = [[ALAUniversalData sharedData] soundFiles][index];
-    NSURL *imageUrl = [NSURL URLWithString:profileInfo[@"image"]];
-    NSData * imageData = [NSData dataWithContentsOfURL:imageUrl];
-    UIImage *image = [UIImage imageWithData:imageData];
-    songImage.image = image;
-    //songName.text = profileInfo[@"name"];
-    //profileURL.text = profileInfo[@"github"];
-
-
-}
+//-(void)setIndex:(NSInteger)index
+//{
+//    _index = index;
+//    NSDictionary * profileInfo = [[ALAUniversalData sharedData] soundFiles][index];
+//    NSURL *imageUrl = [NSURL URLWithString:profileInfo[@"image"]];
+//    NSData * imageData = [NSData dataWithContentsOfURL:imageUrl];
+//    UIImage *image = [UIImage imageWithData:imageData];
+//    songImage.image = image;
+//    //songName.text = profileInfo[@"name"];
+//    //profileURL.text = profileInfo[@"github"];
+//
+//
+//}
 
 - (void)awakeFromNib
 {
